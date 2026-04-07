@@ -43,30 +43,10 @@ def build_back_template():
 <hr>
 <div class="english">{{English}}</div>
 
-<div id="ichimoe-section">
-  <a id="btn-reveal">ichi.moe breakdown</a>
-  <div class="wrapper">
-    <div id="reveal-content" class="hide">
-      <iframe id="ifra"></iframe>
-    </div>
-  </div>
-</div>
-
+<iframe id="ifra"></iframe>
 <script>
   document.getElementById("ifra").src =
     "https://ichi.moe/cl/qr/?q=" + encodeURIComponent("{{text:Japanese}}");
-
-  document.getElementById("btn-reveal").addEventListener("click", function () {
-    var el = document.getElementById("reveal-content");
-    el.classList.contains("hide") ? el.classList.remove("hide") : el.classList.add("hide");
-  });
-
-  document.body.addEventListener("keydown", function (e) {
-    if (!e.isComposing && e.keyCode !== 229 && e.keyCode === 9) {
-      var el = document.getElementById("reveal-content");
-      el.classList.contains("hide") ? el.classList.remove("hide") : el.classList.add("hide");
-    }
-  });
 </script>
 """
 
