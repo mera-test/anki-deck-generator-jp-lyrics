@@ -10,7 +10,7 @@ anki_model_name: "Japanese Lyrics Model"
 # CSS styling for each card
 Style: "
 .card {
-  font-family: 'MS PMincho', serif;
+  font-family: 'Hiragino Mincho Pro', serif;
   font-size: 22px;
   color: #BDC7C1;
   text-align: center;
