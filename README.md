@@ -17,13 +17,18 @@ pip install genanki pyyaml deep-translator
 
 ## Source data
 
-Edit `data/source.txt` and paste in your Japanese lyrics — one line per line, nothing else needed.
+Edit `data/source.txt` and paste in your Japanese lyrics — one line per line, nothing else needed. Step-by-step:
+
+1. Search for a Japanese lyrics
+2. Using AI (ChatGPT), ask to "arranged the lyrics so that each line is a complete sentence, without adding or changing any words"
 
 ```
-桜の花びらたちよ
-風に舞い上がれ
-遠い空の彼方へ
-消えてしまう前に
+from:
+過ぎてゆく時の中
+あなたを思い出す
+
+to:
+過ぎてゆく時の中あなたを思い出す。
 ```
 
 Each line will be automatically translated to English using Google Translate when the deck is generated.
